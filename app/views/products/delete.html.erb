@@ -1,0 +1,6 @@
+<h1>Delete Product</h1>
+
+<p>Are you sure you want to delete the product <%= @product.name %>?</p>
+
+<%= link_to 'Cancel', product_path(@product), class: 'btn btn-secondary' %>
+<%= link_to 'Delete', product_path(@product), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>

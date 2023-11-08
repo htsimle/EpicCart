@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Catalog</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><%= link_to 'Product Catalog', root_path %></li>
+      <li><%= link_to 'View Catalog', products_path %></li>
+      <li><%= link_to 'Add New Product', new_product_path %></li>
+    </ul>
+  </nav>
+  <%= yield %>
+</body>
+</html>

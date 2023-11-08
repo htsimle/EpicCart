@@ -1,0 +1,22 @@
+<h1>New Product</h1>
+
+<%= form_for @product do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_area :description, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :price %>
+    <%= f.text_field :price, class: 'form-control' %>
+  </div>
+
+  <%= f.submit 'Create Product', class: 'btn btn-primary' %>
+<% end %>
+
+<%= link_to 'Back to Catalog', products_path, class: 'btn btn-secondary' %>
